@@ -1,0 +1,54 @@
+/* CSS Rule for the "mypage" class:
+*  This rule will apply to any element on the page that has the class "mypage". */
+.mypage { 
+    /* Font Styling:
+     * Sets a list of preferred fonts in order. The browser will use the first available one.
+     * 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' are specific font names.
+     * 'sans-serif' is a generic fallback if none of the specific fonts are found. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  
+  /* CSS Rule for anchor tags (links):
+   *  Styles all links (<a> elements) that have an "href" attribute, even if empty. */
+  a[href] {
+    /* Default Link Color:
+     *  Sets the color of links to brown */
+    color: brown; 
+  }
+  
+  /* CSS Rule for the "mybutton" class: 
+   * Styles any element with the class "mybutton". */
+  .mybutton { 
+    /* Font Styling (same as the 'mypage' rule) */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  
+  /* CSS Rule for "mybutton" on active state: 
+   * Styles "mybutton" elements when they are clicked/tapped. */
+  .mybutton:active { 
+    /* Background Color Change:
+     * Changes the background color to cornflowerblue on click. */
+    background-color: cornflowerblue;
+  
+    /* Shrink Effect:
+     * Slightly shrinks the button by 1% on click, providing visual feedback. */
+    transform: scale(0.99); 
+  }
+  
+  /* CSS Rule for anchor tags (links) on hover: 
+   * Styles links when the mouse hovers over them. */
+  a:hover { 
+    /* Background and Text Color Change to SF Niners Colors:
+     * Changes background to brown and text color to white on hover. */
+    background-color: #aa0000; 
+    color: #b3995d; 
+  }
+  li:first-of-type {
+    color: red;
+  } 
+  li:last-of-type {
+    color: blue;
+  } 
+  li:nth-of-type(2n) {
+    color: green;
+  }
