@@ -1,16 +1,26 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0dc46f66497c05f3934c568c27ffc4b7022c667d
 [[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
+<<<<<<< HEAD
+=======
 django = "*"
 djangorestframework = "*"
 djangorestframework-xml = "*"
+>>>>>>> 0dc46f66497c05f3934c568c27ffc4b7022c667d
 mysqlclient = "*"
 
 [dev-packages]
 
 [requires]
+<<<<<<< HEAD
+python_version = "3.11"
+=======
 python_version = "3.9"
+>>>>>>> 0dc46f66497c05f3934c568c27ffc4b7022c667d
