@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Demonstrated</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+        }
+        .css-code {
+            background-color: #f9f9f9; /* Lighter shade of grey for less visual intrusion */
+            border-left: 5px solid #333333; /* Keeping the left border to indicate code blocks */
+            padding: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            color: #333; /* Optional: Adjust text color for better readability */
+        }
+        /* Adjusted individual CSS rules to demonstrate different selectors */
+        p { color: blue; }
+        #latest { background-color: purple; color: white; padding: 5px; }
+        .navigation { background-color: lightgray; margin: 2px; padding: 5px; }
+        p.introduction { font-weight: bold; margin: 2px; }
+        #blog h1 { color: blue; }
+        #blog > p { color: green; }
+        a:hover { color: orange; }
+    </style>
+</head>
+<body>
+
+<h2>Element Selector</h2>
+<div class="css-code">p { color: blue; }</div>
+<p>Once upon a time...</p>
+
+<h2>ID Selector</h2>
+<div class="css-code">#latest { background-color: purple; color: white; }</div>
+<span id="latest">New!</span>
+
+<h2>Class Selector</h2>
+<div class="css-code">.navigation { background-color: lightgray; }</div>
+<a class="navigation">Go Back</a>
+<p class="navigation">Go Forward</p>
+
+<h2>Element with Class Selector</h2>
+<div class="css-code">p.introduction { font-weight: bold; }</div>
+<p class="introduction">This paragraph introduces the topic.</p>
+
+<h2>Descendant Selector</h2>
+<div class="css-code">#blog h1 { color: blue; }</div>
+<div id="blog">
+    <h1>Latest News</h1>
+    <div>
+        <h1>Today's Weather</h1>
+        <p>The weather will be sunny</p>
+    </div>
+    <p>Subscribe for more news</p>
+</div>
+
+<h2>Child Selector</h2>
+<div class="css-code">#blog > p { color: green; }</div>
+<div id="blog">
+    <p>This paragraph is a direct child of #blog and is styled green.</p>
+</div>
+
+<h2>:hover Pseudo-Class</h2>
+<div class="css-code">a:hover { color: orange; }</div>
+<a href="#">Hover over me!</a>
+
+</body>
+</html>

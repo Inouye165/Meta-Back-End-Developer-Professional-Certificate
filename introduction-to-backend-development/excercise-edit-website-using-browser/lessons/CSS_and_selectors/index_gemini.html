@@ -1,0 +1,92 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector Showcase</title>
+    <style>
+        /* Overall Styling - Make it Presentable */
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #336699;
+        }
+
+        code { 
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Showcase</h1>
+
+    <section>
+        <h2>Element Selector</h2>
+        <p>Styles all <code>&lt;p&gt;</code> elements:</p>
+        <p>This text should be blue.</p>
+        <style>
+            p {
+                color: blue; 
+            }
+        </style>
+    </section>
+
+    <section>
+        <h2>ID Selector</h2>
+        <p>Styles the element with <code>id="important"</code>:</p>
+        <p id="important">This text should be larger and bold.</p>
+        <style>
+            #important {
+                font-size: 18px; 
+                font-weight: bold;
+            }
+        </style>
+    </section>
+
+    <section>
+        <h2>Class Selector</h2>
+        <p>Styles elements with <code>class="highlight"</code>:</p>
+        <p class="highlight">This text has a yellow background.</p>
+        <p>Normal paragraph (not highlighted).</p>
+        <style>
+            .highlight { 
+                background-color: yellow;
+            }
+        </style>
+    </section>
+
+     <section>
+        <h2>Descendant Selector</h2>
+        <p>Styles <code>&lt;em&gt;</code> elements inside <code>#special-section</code>:</p>
+        <div id="special-section">
+            <p>This text is normal.</p>
+            <p>This <em>emphasized text</em> should be italic.
+        </div>
+        <style>
+            #special-section em {
+                font-style: italic;
+            }
+        </style>
+    </section>
+
+    <section>
+        <h2>:hover Pseudo-Class</h2>
+        <p>Change background on hover (try it!):</p>
+        <button>Hover over me</button>
+        <style>
+            button:hover {
+                background-color: lightblue;
+            }
+        </style>
+    </section>
+
+    </body>
+</html>
