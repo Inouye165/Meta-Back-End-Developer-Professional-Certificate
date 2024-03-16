@@ -1,3 +1,10 @@
+This page was written by ChatGPT. It is a demonstration of CSS selectors.
+I have added some HTML and CSS to demonstrate how different CSS selectors work.
+You can see the HTML and CSS code below, and the results of the CSS selectors in the examples.
+I hope this helps you understand how CSS selectors work! I went through this excercise to help 
+me understand how to edit a website using a browser. I hope you find it helpful too!
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +17,13 @@
             margin: auto;
         }
         .css-code {
-            background-color: #f9f9f9; /* Lighter shade of grey for less visual intrusion */
-            border-left: 5px solid #333333; /* Keeping the left border to indicate code blocks */
+            background-color: #f9f9f9;
+            border-left: 5px solid #333333;
             padding: 10px;
             margin: 20px 0;
             font-family: monospace;
-            color: #333; /* Optional: Adjust text color for better readability */
+            color: #333;
         }
-        /* Adjusted individual CSS rules to demonstrate different selectors */
         p { color: blue; }
         #latest { background-color: purple; color: white; padding: 5px; }
         .navigation { background-color: lightgray; margin: 2px; padding: 5px; }
@@ -25,47 +31,139 @@
         #blog h1 { color: blue; }
         #blog > p { color: green; }
         a:hover { color: orange; }
+        /* Styles for demonstrating before and after */
+        .before-after-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .before, .after {
+            flex: 1;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .before { background-color: #eee; }
+        .after { background-color: #def; }
+        .example-title {
+            text-align: center;
+            margin: 10px 0;
+ 
     </style>
 </head>
 <body>
 
 <h2>Element Selector</h2>
-<div class="css-code">p { color: blue; }</div>
-<p>Once upon a time...</p>
+<pre class="css-code">
+Example CSS: p { color: blue; }
+Example HTML being targeted: &lt;p&gt;Once upon a time...&lt;/p&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <p style="color: initial;" class="highlight">Once upon a time...</p>
+    </div>
+    <div class="after">
+        <div class="example-title">After</div>
+        <p>Once upon a time...</p>
+    </div>
+</div>
 
 <h2>ID Selector</h2>
-<div class="css-code">#latest { background-color: purple; color: white; }</div>
-<span id="latest">New!</span>
+<pre class="css-code">
+Example CSS: #latest { background-color: purple; color: white; }
+Example HTML being targeted: &lt;span id="latest"&gt;New!&lt;/span&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <span id="latest" style="background-color: initial; color: initial;" class="highlight">New!</span>
+    </div>
+    <div class="after">
+        <div class="example-title">After</div>
+        <span id="latest">New!</span>
+    </div>
+</div>
 
 <h2>Class Selector</h2>
-<div class="css-code">.navigation { background-color: lightgray; }</div>
-<a class="navigation">Go Back</a>
-<p class="navigation">Go Forward</p>
+<pre class="css-code">
+Example CSS: .navigation { background-color: lightgray; }
+Example HTML being targeted: &lt;a class="navigation"&gt;Go Back&lt;/a&gt; and &lt;p class="navigation"&gt;Go Forward&lt;/p&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <a href="#" style="background-color: initial;" class="navigation highlight">Go Back</a>
+        <p style="background-color: initial;" class="navigation highlight">Go Forward</p>
+    </div>
+    <div class="after">
+        <div class="example-title">After</div>
+        <a href="#" class="navigation">Go Back</a>
+        <p class="navigation">Go Forward</p>
+    </div>
+</div>
 
 <h2>Element with Class Selector</h2>
-<div class="css-code">p.introduction { font-weight: bold; }</div>
-<p class="introduction">This paragraph introduces the topic.</p>
+<pre class="css-code">
+Example CSS: p.introduction { font-weight: bold; }
+Example HTML being targeted: &lt;p class="introduction"&gt;This paragraph introduces the topic.&lt;/p&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <p class="introduction highlight" style="font-weight: initial;">This paragraph introduces the topic.</p>
+    </div>
+    <div class="after">
+        <div class="example-title">After</div>
+        <p class="introduction">This paragraph introduces the topic.</p>
+    </div>
+</div>
 
 <h2>Descendant Selector</h2>
-<div class="css-code">#blog h1 { color: blue; }</div>
-<div id="blog">
-    <h1>Latest News</h1>
-    <div>
-        <h1>Today's Weather</h1>
-        <p>The weather will be sunny</p>
+<pre class="css-code">
+Example CSS: #blog h1 { color: blue; }
+Example HTML being targeted: &lt;div id="blog"&gt;&lt;h1&gt;Latest News&lt;/h1&gt;&lt;/div&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <div id="blog" style="color: initial;">
+            <h1 style="color: initial;" class="highlight">Latest News</h1>
+        </div>
     </div>
-    <p>Subscribe for more news</p>
+    <div class="after">
+        <div class="example-title">After</div>
+        <div id="blog">
+            <h1>Latest News</h1>
+        </div>
+    </div>
 </div>
 
 <h2>Child Selector</h2>
-<div class="css-code">#blog > p { color: green; }</div>
-<div id="blog">
-    <p>This paragraph is a direct child of #blog and is styled green.</p>
+<pre class="css-code">
+Example CSS: #blog &gt; p { color: green; }
+Example HTML being targeted: &lt;div id="blog"&gt;&lt;p&gt;This paragraph is a direct child of #blog and is styled green.&lt;/p&gt;&lt;/div&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <div id="blog" style="color: initial;">
+            <p style="color: initial;" class="highlight">This paragraph is a direct child of #blog and is styled green.</p>
+        </div>
+    </div>
+    <div class="after">
+        <div class="example-title">After</div>
+        <div id="blog">
+            <p>This paragraph is a direct child of #blog and is styled green.</p>
+        </div>
+    </div>
 </div>
 
 <h2>:hover Pseudo-Class</h2>
-<div class="css-code">a:hover { color: orange; }</div>
-<a href="#">Hover over me!</a>
-
-</body>
-</html>
+<pre class="css-code">
+Example CSS: a:hover { color: orange; }
+Example HTML being targeted: &lt;a href="#"&gt;Hover over me!&lt;/a&gt;
+</pre>
+<div class="before-after-container">
+    <div class="before">
+        <div class="example-title">Before</div>
+        <a href="#" style="color: initial;">Hover over me!</

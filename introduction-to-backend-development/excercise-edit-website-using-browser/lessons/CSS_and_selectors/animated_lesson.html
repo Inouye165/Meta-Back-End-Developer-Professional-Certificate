@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID Selector Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #animatedExample {
+            position: relative;
+            height: 200px;
+        }
+        .arrow {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0; 
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid black;
+            animation: moveArrow 4s infinite;
+        }
+        @keyframes moveArrow {
+            0%, 100% {
+                top: 0;
+            }
+            50% {
+                top: 180px;
+            }
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        #targetElement {
+            color: blue;
+            animation: highlight 4s infinite;
+        }
+        @keyframes highlight {
+            0%, 100% {
+                background-color: initial;
+            }
+            50% {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="animatedExample">
+    <div class="arrow"></div>
+    <p id="targetElement" style="position: absolute; bottom: 0;">This &lt;p&gt; tag is targeted by the ID selector.</p>
+</div>
+
+<pre>
+/* CSS Code */
+#targetElement {
+    color: blue;
+}
+</pre>
+
+<script>
+    // JavaScript is optional here, mainly for adding more interactive or complex animations beyond what CSS offers
+</script>
+
+</body>
+</html>
