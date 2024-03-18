@@ -1,0 +1,10 @@
+Welcome to my sample text file!
+Today's date is: 2023-12-20
+Fun Fact: Dogs have a sense of smell up to 100,000 times stronger than humans.
+1 + 2 * 3 = 7 (Testing order of operations)
+"The only way to do great work is to love what you do." - Steve Jobs
+A quick brown fox jumps over the lazy dog. (A classic sentence using all English letters)
+Website: www.example.com
+Favorite colors: Blue, Green, Orange
+To-do list: Buy groceries, finish project, call Mom.
+This is the final line!/n Adding this line/n Adding this line
