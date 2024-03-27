@@ -1,0 +1,21 @@
+Please provide the output with absolutely no blank lines between any sections.
+Analyze this video transcript or reading. Provide:
+A short summary in 2 sentences or less start with "Summary: your generated summary" now "Short summary"
+A detailed breakdown, including definitions, of the following categories IE "ISP: Internet Service Provider", "Santa Clause: Delivers Present", "o	Software Development Life Cycle (SDLC): A framework outlining stages involved in building software.":
+All Acronyms in transcript with definitions
+All terms in transcript with definitions
+All Technical words in transcript with definitions
+All Rarely used words in transcript that a 12 year old might not understand with definition.
+AllSoftware packages mentioned with definitions
+All Commands mentioned with definitions
+All modules mentioned with definitions
+All Ideas mentioned in the transcript with definitions
+All techniques described in the transcript with definitions
+All Important people mentioned in the transcript with a short bio.(if mentioned) with definitions
+All important dates and why
+All theories mentioned in the transcript with definitions(if mentioned)with definitions
+Keywords in the form of a python command that contains each keyword surrounded by quotes, sperated by commas with the group of words enclosed in brackets all on a single line. 
+no formatting and no blank lines between sections or pararaphs. I will format myself and dont need blank lines.
+End with a not who wrote this. IE Gemini, chatGPT
+Double check that all items listed have definitions. 
+Please provide the output with absolutely no blank lines between any sections. 
