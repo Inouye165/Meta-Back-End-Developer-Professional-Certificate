@@ -1,0 +1,102 @@
+<!-- <body>
+    <h2 style="color:#ee9972;"> Items: {{menu.menu_item}} </h2>
+    <h3 style="color: #495e97;">Cuisine: {{menu.cuisine}}</h3>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django MVT Architecture Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-size: 12px;
+        }
+        .container, .lesson-example {
+            background-color: #fff;
+            padding: 2px;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 3px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            font-size: 1em;
+        }
+        p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .section {
+            margin-bottom: 5px;
+        }
+        .term, .command, .acronym {
+            background-color: #eef;
+            padding: 4px;
+            border-left: 4px solid #33a;
+            margin-bottom: 2px;
+        }
+        .term h3, .command h3, .acronym h3 {
+            color: #33a;
+            font-size: 1em;
+        }
+        .term p, .command p, .acronym p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="lesson-example">
+        <h2 style="color:#ee9972;">Items: {{menu.menu_item}}</h2>
+        <h3 style="color: #495e97;">Cuisine: {{menu.cuisine}}</h3>
+    </div>
+    <div class="container">
+        <h1>Django MVT Architecture Overview </h1>
+        <h3> Just for fun a addition</h3>
+        <div class="section summary">
+            <h2>Summary</h2>
+            <p>This video provides an introductory overview of Django's MVT (Model-View-Template) architecture. It emphasizes the separation of data logic and display in the Django framework, aiming to demystify the process of back-end development for new developers. Through practical examples, viewers are shown how Django organizes a project and facilitates the creation of data-driven web applications.</p>
+        </div>
+        <div class="section commands">
+            <h2>Commands</h2>
+            <div class="command">
+                <h3>python manage.py runserver</h3>
+                <p>Starts the Django development server, making the project accessible through a web browser at the default address (typically <code>http://127.0.0.1:8000/</code>).</p>
+            </div>
+        </div>
+        <div class="section terms">
+            <h2>Terms</h2>
+            <div class="term">
+                <h3>Model</h3>
+                <p>Represents the data structure. It is a Python class that defines the fields and behaviors of the data you’re storing. Django follows the DRY Principle and aims to automate the creation of database tables.</p>
+            </div>
+            <div class="term">
+                <h3>View</h3>
+                <p>Controls what the user sees. It is a Python function that receives a web request and returns a web response. Views access the data through models and delegate formatting to the templates.</p>
+            </div>
+            <div class="term">
+                <h3>Template</h3>
+                <p>Defines how the user sees the data. It is an HTML file which allows Python-like expressions for dynamic content generation. Templates are used to generate HTML dynamically.</p>
+            </div>
+        </div>
+        <div class="section acronyms">
+            <h2>Acronyms</h2>
+            <div class="acronym">
+                <h3>MVT</h3>
+                <p>Model-View-Template - A software design pattern for developing web applications. It is a variation of the traditional MVC (Model-View-Controller) architecture.</p>
+            </div>
+            <div class="acronym">
+                <h3>DRY</h3>
+                <p>Don't Repeat Yourself - A principle aimed at reducing repetition of software patterns and replacing it with abstractions or using data normalization to avoid redundancy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
