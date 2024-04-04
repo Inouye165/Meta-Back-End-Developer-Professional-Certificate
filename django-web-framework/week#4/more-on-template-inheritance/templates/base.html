@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Web Application</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 1rem;
+        }
+        .sidebar {
+            width: 20%;
+            float: left;
+            border-right: 1px solid #ccc;
+            padding: 1rem;
+        }
+        .content {
+            margin-left: 21%;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h2>Django Web Application</h2>
+        <hr>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="/myapp/home/">Home</a></li>
+            <li><a href="/myapp/register/">Register</a></li>
+            <li><a href="/myapp/login/">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        {% block contents %}
+        <!-- Child templates will override this block -->
+        {% endblock contents %}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        {% block footer %}
+        <hr>
+        <h4>All rights reserved</h4>
+        {% endblock footer %}
+    </div>
+</body>
+</html>

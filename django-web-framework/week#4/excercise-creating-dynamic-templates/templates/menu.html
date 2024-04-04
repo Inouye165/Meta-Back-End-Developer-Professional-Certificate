@@ -1,0 +1,13 @@
+<!-- Add code to display contents of the Menu -->
+
+
+
+{% block content %}
+    {% if menu %}
+        {% for item in menu %}
+            {{ item.name }} : ${{ item.price }}<br>
+        {% endfor %}
+    {% else %}
+        No items to display
+    {% endif %}
+{% endblock %}
