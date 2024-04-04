@@ -19,3 +19,5 @@ no formatting and no blank lines between sections or pararaphs. I will format my
 End with a not who wrote this. IE Gemini, chatGPT
 Double check that all items listed have definitions. 
 Please provide the output with absolutely no blank lines between any sections. 
+
+End with a not who wrote this. IE Gemini, chatGPT.  Make it a random funny phrase that includes what LLM created my notes. Always include the name of the LLM that created this note.
