@@ -7,12 +7,14 @@ from django.shortcuts import get_object_or_404
 # Create your views here.
 @api_view(['POST','GET'])
 def menu_items(request):
-    items = MenuItem.objects.all()
+    # items = MenuItem.objects.all()
+    items = MenuItem.objects.select_related('category').all()
     serialized_item = MenuItemSerializer(items, many=True)
     return Response(serialized_item.data)
 
 @api_view()
 def single_item(request, id):
-    item = get_object_or_404(MenuItem.objects,id=id)
+    # item = get_object_or_404(MenuItem.objects,id=id)
+    item = get_object_or_404(MenuItem, pk=id)
     serialized_item = MenuItemSerializer(item)
     return Response(serialized_item.data)
