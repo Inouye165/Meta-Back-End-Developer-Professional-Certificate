@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 @api_view(['POST','GET'])
 def menu_items(request):
     # items = MenuItem.objects.all()
-    items = MenuItem.objects.select_related('category').all()
+    items = MenuItem.objects.select_related('category').all() # Changed at 2:11
     serialized_item = MenuItemSerializer(items, many=True)
     return Response(serialized_item.data)
 
