@@ -14,14 +14,18 @@ def menu_items(request):
         print(category_name,' ',items[0].category)
         to_price = request.query_params.get('to_price')
         search = request.query_params.get('search')
+        ordering = request.query_params.get('ordering')
         if category_name:
             items = items.filter(category__title=category_name)
         if to_price:
             items = items.filter(price=to_price)
-        serialized_item = MenuItemSerializer(items, many=True)
         if search:
             items = items.filter(title__icontains=search)
-            serialized_item = MenuItemSerializer(items, many=True)
+        if ordering:
+            ordering_fields = ordering.split(',') #added at 2:56
+            items = items.order_by(*ordering_fields) #added at 2:56
+            # items = items.order_by(ordering) removed at 2:56
+        serialized_item = MenuItemSerializer(items, many=True)
         return Response(serialized_item.data)
     elif(request.method == 'POST'):
         serialized_item = MenuItemSerializer(data=request.data)
