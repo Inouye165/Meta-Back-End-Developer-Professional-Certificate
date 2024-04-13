@@ -45,8 +45,6 @@ class OrderItemSerializer(serializers.ModelSerializer):
         model = OrderItem
         fields = ['order', 'menuitem', 'quantity', 'price']
 
-# class OrderSerializer(serializers.ModelSerializer): # This is what gemini said to do
-#     orderitem = OrderItemSerializer(many=True, read_only=True, source='items') 
 
 class OrderSerializer(serializers.ModelSerializer):
 
