@@ -1,0 +1,7 @@
+# ProjecExercise: Set up the table booking API | Coursera
+## Description
+
+A brief description of the project and its purpose.
+This project builds a Little Lemon Restaurant website.  This is one step in the process.  
+
+4-14-2024
